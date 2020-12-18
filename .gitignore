@@ -7,6 +7,7 @@ dist/
 .env
 coverage
 ormconfig.json
+yarn-error.log
 
 tmp/*
 !tmp/.gitkeep
