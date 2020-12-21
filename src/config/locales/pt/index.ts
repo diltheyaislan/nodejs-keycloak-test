@@ -49,6 +49,11 @@ export default {
       alreadyActivated: 'Função já existe',
       notFound: 'Função não encontrada',
     },
+    post: 'Post',
+    posts: {
+      alreadyExists: 'Post já existe',
+      notFound: 'Post não encontrado',
+    },
   },
 
   /* Validation */

@@ -8,7 +8,7 @@ dist/
 coverage
 ormconfig.json
 yarn-error.log
+yarn.lock
 
 tmp/*
 !tmp/.gitkeep
-yarn.lock

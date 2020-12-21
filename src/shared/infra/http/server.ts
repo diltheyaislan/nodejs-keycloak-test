@@ -15,6 +15,7 @@ import 'express-async-errors';
 import locale from '@config/locales';
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
+import Keycloak from '@shared/infra/keycloak';
 import routes from './routes';
 
 import '@shared/infra/typeorm';
@@ -25,6 +26,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/files', express.static(uploadConfig.uploadsFolder));
+
+Keycloak.initKeycloak();
+app.use(Keycloak.getKeycloak().middleware());
+
 app.use('/api', routes);
 
 app.use(errors());

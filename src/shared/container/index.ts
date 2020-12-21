@@ -21,6 +21,9 @@ import UserPermissionsRepository from '@modules/users/infra/typeorm/repositories
 import IUserPermissionRepository from '@modules/permissions/repositories/IUserPermissionRepository';
 import UserPermissionRepository from '@modules/permissions/infra/typeorm/repositories/UserPermissionRepository';
 
+import IPostsRepository from '@modules/posts/repositories/IPostsRepository';
+import PostsRepository from '@modules/posts/infra/typeorm/repositories/PostsRepository';
+
 container.registerSingleton<IUsersRepository>(
   'UsersRepository',
   UsersRepository,
@@ -49,4 +52,9 @@ container.registerSingleton<IUserPermissionsRepository>(
 container.registerSingleton<IUserPermissionRepository>(
   'UserPermissionRepository',
   UserPermissionRepository,
+);
+
+container.registerSingleton<IPostsRepository>(
+  'PostsRepository',
+  PostsRepository,
 );

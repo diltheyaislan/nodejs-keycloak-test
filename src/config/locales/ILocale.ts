@@ -48,6 +48,11 @@ export default interface ILocale {
       alreadyExists: string;
       notFound: string;
     };
+    post: string;
+    posts: {
+      alreadyExists: string;
+      notFound: string;
+    };
   };
 
   /* Validation */

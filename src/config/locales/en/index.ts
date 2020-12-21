@@ -48,6 +48,11 @@ export default {
       alreadyActivated: 'Role already exists',
       notFound: 'Role not found',
     },
+    post: 'Post',
+    posts: {
+      alreadyExists: 'Post already exists',
+      notFound: 'Post not found',
+    },
   },
 
   /* Validation */
